@@ -1,0 +1,137 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    height: 100%;
+    background: hsl(0, 0%, 95%);
+    display: flex;
+}
+
+.box {
+    background: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 919px;
+    margin: auto;
+    border-radius:10px;
+}
+
+.box1, .box2, .box3{
+    padding:46px;
+}
+.box1 {
+    background: hsl(31, 77%, 52%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+}
+
+.box2 {
+    background: hsl(184, 100%, 22%);
+}
+
+.box3 {
+    background: hsl(179, 100%, 13%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.tittle {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height:1.8;
+}
+
+.image, .tittle{
+    margin-bottom:30px;
+}
+
+button {
+    margin-top:80px;
+    padding:12px 40px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    border: 2px solid white;
+    color: hsla(0, 0%, 100%, 0.75);
+    border-radius:30px;
+}
+
+.a {
+    color: hsl(31, 77%, 52%);
+    background:white;
+}
+
+.b {
+    color: hsl(184, 100%, 22%);
+    background: white;
+}
+
+.c {
+    color: hsl(179, 100%, 13%);
+    background: white;
+}
+
+.a:active {
+    color: white;
+    background: hsl(31, 77%, 52%);
+}
+
+
+.b:active {
+    color: white;
+    background: hsl(184, 100%, 22%);
+}
+
+.c:active {
+    color: white;
+    background: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width: 480px){
+     .box{
+         width: 327px;
+         height:1038px;
+         display:flex;
+         flex-direction:column;
+         padding: 0;
+         margin-top:88px;
+         margin-bottom:88px;
+     }
+
+    .box1, .box2, .box3 {
+        height:346px;
+        padding:47px;
+    }
+        .box1{
+         border-bottom-left-radius:0;
+         border-top-right-radius:5px;
+     }
+
+    .box3 {
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0;
+    }
+
+    button{
+        margin-top:28px;
+    }
+
+    
+}
